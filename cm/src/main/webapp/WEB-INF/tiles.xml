@@ -1,0 +1,27 @@
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Layout for login pages starts -->
+	<!-- <definition name="baseLayoutLogin" template="/pages/common/baseLayoutLogin.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/pages/common/Loginheader.jsp" />
+		<put-attribute name="body" value="/pages/common/body.jsp" />
+		<put-attribute name="footer" value="/pages/common/footer.jsp" />
+	</definition> -->
+	<!-- Base Layout for login pages ends -->
+
+	<!-- Base Layout for All pages starts -->
+
+	<definition name="baseLayout" template="/pages/common/baseLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/pages/common/header.jsp" />
+		<put-attribute name="menu" value="/pages/common/menu.jsp" />
+		<put-attribute name="body" value="/pages/common/body.jsp" />
+		<put-attribute name="footer" value="/pages/common/footer.jsp" />
+	</definition>
+	<!-- Base Layout for All pages ends -->
+
+	
+</tiles-definitions>

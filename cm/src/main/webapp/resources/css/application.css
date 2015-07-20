@@ -1,0 +1,209 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color:#fff;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+.borderBlue {
+	-webkit-box-shadow: 5px 4px 10px 0 #242424;
+	box-shadow: 5px 4px 10px 0 #5E5E5E;
+}
+
+.bk-pt{
+	width:100%;
+	background-image: url("../../resources/images/13bd7e22.png");
+}
+
+.bk-pt1{
+	width:100%;
+	background: rgb(178,225,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(178,225,255,1) 48%, rgba(102,182,252,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,rgba(178,225,255,1)), color-stop(100%,rgba(102,182,252,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', endColorstr='#66b6fc',GradientType=0 ); /* IE6-9 */
+		
+}
+
+.customText{
+	font-size: medium;
+}
+
+.redback{
+	background-color: #FF3F21;
+}
+
+.navbar-nav > li > a {padding-top:8px !important; padding-bottom:7px !important;}
+.navbar {min-height:35px !important}
+.navbar .container,.navbar .container .navbar-brand{height: 35px !important;}
+.navbar .container .navbar-brand{padding: 7px 12px; }
+
+.dropdown-menu {min-width: 200px !important;padding: 3px 0 !important;font-size: 13px !important;}
+.dropdown-menu .divider {margin: 4px 0 !important;}
+
+.change-image{width: 100%;height: 100%;background-color: #fff;position: absolute;top:0px;display: none; cursor: pointer;}
+.opacity_80 { -webkit-opacity: 0.8;-moz-opacity: 0.8;filter:alpha(opacity=80);}
+.opacity_70 { -webkit-opacity: 0.7;-moz-opacity: 0.7;filter:alpha(opacity=70);}
+.opacity_50 { -webkit-opacity: 0.5;-moz-opacity: 0.5;filter:alpha(opacity=50);}
+.opacity_40 { -webkit-opacity: 0.4;-moz-opacity: 0.4;filter:alpha(opacity=40);}
+.opacity_30 { -webkit-opacity: 0.3;-moz-opacity: 0.3;filter:alpha(opacity=30);}
