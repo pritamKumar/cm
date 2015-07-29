@@ -36,7 +36,7 @@
 </head>
 
 
-<body class=".header_nav">
+<body>
 	<table id="layoutTable" align="center"
 		style="height: 100%; width: 100%;">
 		<tbody>

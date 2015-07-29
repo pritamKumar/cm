@@ -19,9 +19,11 @@ $(window).scroll(function(event) {
 });
 
 //For customizing the navbar text
-$("#navbar ul li a").css("color","black");
+//$("#navbar ul li a").css("color","black");
+$("#navbar ul li .info-panel a").css("color","black");
 $(".navbar-brand").css("color","white");
 $("#navbarRight li a .glyphicon-calendar").css("color","#FFF");
+$("#navbarRight li a .glyphicon-user").css("color","#FFF");
 $("#navbarRight li a").css("font-size","12px");
 $("#navbarRight li a .glyphicon-off").css("color","red");
 
@@ -51,10 +53,10 @@ function editImageHover(){
 }
 
 //Attaching click event to account and logout link
-$("#h_account").click(function(){
-	
-});
 $("#h_logout").click(function(){
+	$("form[name='logoutForm'").submit();
+});
+$("#h_account").click(function(){
 	$('#myModal').on('shown.bs.modal', function() {
 		$('#myInput').focus();
 	});

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<nav class="navbar navbar-default navbar-fixed-top header_nav bk-pt" >
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<nav class="navbar navbar-inverse navbar-fixed-top header_nav bk-pt" >
 	<div style="border-bottom: 1px solid #eee;text-align: left;">
 	  <h1> CM <small>beta version</small></h1>
 	</div>
@@ -41,14 +42,14 @@
 					</li>
 					
 			      <!-- <li></li> -->
-			      <li role="separator" class="divider"></li>
-			      <li>
+			      <li data-role="separator" class="divider"></li>
+			      	<li>
 						<div class="row info-panel">
 							<div class="col-md-6 text-center">
-								<a href="" id="h_account"><span class="glyphicon glyphicon-cog" data-aria-hidden="true"></span> Account</a>
+								<a href="#" id="h_account" data-toggle="modal" data-target="#m_account"><span class="glyphicon glyphicon-cog" data-aria-hidden="true"></span> Account</a>
 							</div>
 							<div class="col-md-6 text-left">
-								<a href="" id="h_logout" data-toggle="modal" data-target="#m_logout"><span class="glyphicon glyphicon-off" data-aria-hidden="true"></span> Logout</a>
+								<a href="#" id="h_logout"><span class="glyphicon glyphicon-off" data-aria-hidden="true"></span> Logout</a>
 							</div>
 						</div>
 					</li>
@@ -61,20 +62,34 @@
 </nav>
 <!-- Small modal -->
 
-<div class="modal fade" id="m_logout">
+<div class="modal fade" id="m_account">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Logout</h4>
+        <h4 class="modal-title">Account</h4>
       </div>
       <div class="modal-body">
-        <p>Are you sure</p>
+        <div class="row info-panel">
+        	<div class="col-sm-4 col-md-3 sidebar">
+	          <ul class="nav nav-sidebar">
+	            <li><a href="">Nav item</a></li>
+	            <li><a href="">Nav item again</a></li>
+	            <li><a href="">One more nav</a></li>
+	            <li><a href="">Another nav item</a></li>
+	            <li><a href="">More navigation</a></li>
+	          </ul>
+	        </div>
+        	
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Logout</button>
+        <button type="button" class="btn btn-primary">Save</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div>
+<c:url value="/j_spring_security_logout" var="logoutUrl" />
+<form action="${logoutUrl}" method="post" id="logoutForm" name="logoutForm">
+</form>

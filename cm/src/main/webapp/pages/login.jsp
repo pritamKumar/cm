@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page session="true"%>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -64,16 +66,16 @@
 					<div class="row">
 						<div class="col-md-3"></div>
 						<div class="col-md-6">
-							<form class="form-signin">
+							<form class="form-signin" action="<c:url value='/j_spring_security_check' />" method='POST'>
 								<div class="input-group input-group-sm">
 									<span class="input-group-addon" id="sizing-addon3"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span><input
 										type="text" class="form-control" placeholder="Username"
-										aria-describedby="sizing-addon3" />
+										aria-describedby="sizing-addon3" name="username"/>
 								</div>
 								<div class="input-group input-group-sm">
 									<span class="input-group-addon" id="sizing-addon3"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></span> <input
 										type="password" class="form-control" placeholder="Password"
-										aria-describedby="sizing-addon3" />
+										aria-describedby="sizing-addon3" name="password"/>
 								</div>
 								<p></p>
 								<div class="row">

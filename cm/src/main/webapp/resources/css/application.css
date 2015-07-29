@@ -3,11 +3,11 @@
  */
 
 /* Links */
-a,
+/* a,
 a:focus,
 a:hover {
   color: #fff;
-}
+} */
 
 /* Custom default button */
 .btn-default,
@@ -30,7 +30,7 @@ body {
   background-color:#fff;
 }
 body {
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -174,15 +174,16 @@ body {
 
 .bk-pt1{
 	width:100%;
-	background: rgb(178,225,255); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(178,225,255,1) 48%, rgba(102,182,252,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,rgba(178,225,255,1)), color-stop(100%,rgba(102,182,252,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', endColorstr='#66b6fc',GradientType=0 ); /* IE6-9 */
-		
+	background-color: #101010;
+	/* background: rgb(178,225,255); Old browsers
+	background: -moz-linear-gradient(top,  rgba(178,225,255,1) 48%, rgba(102,182,252,1) 100%); FF3.6+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,rgba(178,225,255,1)), color-stop(100%,rgba(102,182,252,1))); Chrome,Safari4+
+	background: -webkit-linear-gradient(top,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); Chrome10+,Safari5.1+
+	background: -o-linear-gradient(top,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); Opera 11.10+
+	background: -ms-linear-gradient(top,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); IE10+
+	background: linear-gradient(to bottom,  rgba(178,225,255,1) 48%,rgba(102,182,252,1) 100%); W3C
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', endColorstr='#66b6fc',GradientType=0 ); IE6-9
+		 */
 }
 
 .customText{
@@ -207,3 +208,5 @@ body {
 .opacity_50 { -webkit-opacity: 0.5;-moz-opacity: 0.5;filter:alpha(opacity=50);}
 .opacity_40 { -webkit-opacity: 0.4;-moz-opacity: 0.4;filter:alpha(opacity=40);}
 .opacity_30 { -webkit-opacity: 0.3;-moz-opacity: 0.3;filter:alpha(opacity=30);}
+
+.col-md-offset-half { margin-left: 4.16666665%;}
